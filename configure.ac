@@ -22,18 +22,18 @@ AC_ARG_ENABLE(optimization, AC_HELP_STRING([--disable-optimization],
 	fi
 ])
 
-PKG_CHECK_MODULES(QT, QtCore QtGui QtXml QtNetwork QtScript QtDBus, dummy=yes,
+PKG_CHECK_MODULES(QT, Qt5Core Qt5Gui Qt5Xml Qt5Network Qt5Script Qt5DBus Qt5Widgets, dummy=yes,
 						AC_MSG_ERROR(Qt is required))
 AC_SUBST(QT_CFLAGS)
 AC_SUBST(QT_LIBS)
 
 AC_MSG_CHECKING(for moc)
-MOC="`$PKG_CONFIG --variable=moc_location QtCore`"
+MOC="`$PKG_CONFIG --variable=host_bins Qt5Core`/moc"
 AC_SUBST(MOC)
 AC_MSG_RESULT($MOC)
 
 AC_MSG_CHECKING(for uic)
-UIC="`$PKG_CONFIG --variable=uic_location QtCore`"
+UIC="`$PKG_CONFIG --variable=host_bins Qt5Core`/uic"
 AC_SUBST(UIC)
 AC_MSG_RESULT($UIC)
 
