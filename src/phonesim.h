@@ -243,7 +243,7 @@ class SimRules : public QTcpSocket
 {
     Q_OBJECT
 public:
-    SimRules(int fd, QObject *parent, const QString& filename, HardwareManipulatorFactory *hmf );
+    SimRules(qintptr fd, QObject *parent, const QString& filename, HardwareManipulatorFactory *hmf );
     ~SimRules() {}
 
     // get the variable value for.
