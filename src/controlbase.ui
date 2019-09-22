@@ -13,1195 +13,1316 @@
   <property name="windowTitle">
    <string>Phonesim</string>
   </property>
-  <layout class="QHBoxLayout">
-   <property name="spacing">
-    <number>6</number>
-   </property>
-   <property name="margin">
-    <number>9</number>
-   </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
    <item>
-    <widget class="QTabWidget" name="tabWidget">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
-     <property name="currentIndex">
-      <number>0</number>
-     </property>
-     <widget class="QWidget" name="tab">
-      <attribute name="title">
-       <string>Registration</string>
-      </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QGroupBox" name="gbHardware">
-           <property name="title">
-            <string>Hardware</string>
-           </property>
-           <layout class="QVBoxLayout">
-            <item>
-             <widget class="QLabel" name="lblSignalQuality">
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Signal Quality Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-              <property name="text">
-               <string>&amp;Signal Quality:</string>
-              </property>
-              <property name="buddy">
-               <cstring>hsSignalQuality</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QSlider" name="hsSignalQuality">
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Signal Quality Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-              <property name="maximum">
-               <number>31</number>
-              </property>
-              <property name="sliderPosition">
-               <number>31</number>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="lblBatteryCharge">
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Battery Charge Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-              <property name="text">
-               <string>&amp;Battery Charge:</string>
-              </property>
-              <property name="buddy">
-               <cstring>hsBatteryCharge</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QSlider" name="hsBatteryCharge">
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Battery Charge Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-              <property name="maximum">
-               <number>100</number>
-              </property>
-              <property name="value">
-               <number>100</number>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="hsBatteryCharging">
-              <property name="text">
-               <string>Charging Battery</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>10</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QCheckBox" name="atCheckBox">
-         <property name="layoutDirection">
-          <enum>Qt::RightToLeft</enum>
-         </property>
-         <property name="text">
-          <string>Show AT data</string>
-         </property>
-         <property name="checked">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="gbNetworkRegistration">
-         <property name="title">
-          <string>Network Registration</string>
-         </property>
-         <layout class="QVBoxLayout">
-          <property name="spacing">
-           <number>6</number>
-          </property>
-          <property name="margin">
-           <number>9</number>
-          </property>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Registration</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QLabel" name="lblOperatorName">
-            <property name="text">
-             <string>Operator &amp;Name</string>
+           <widget class="QGroupBox" name="gbHardware">
+            <property name="title">
+             <string>Hardware</string>
             </property>
-            <property name="buddy">
-             <cstring>leOperatorName</cstring>
-            </property>
+            <layout class="QVBoxLayout">
+             <item>
+              <widget class="QLabel" name="lblSignalQuality">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Signal Quality Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string>&amp;Signal Quality:</string>
+               </property>
+               <property name="buddy">
+                <cstring>hsSignalQuality</cstring>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="hsSignalQuality">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Signal Quality Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>31</number>
+               </property>
+               <property name="sliderPosition">
+                <number>31</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblBatteryCharge">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Battery Charge Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="text">
+                <string>&amp;Battery Charge:</string>
+               </property>
+               <property name="buddy">
+                <cstring>hsBatteryCharge</cstring>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="hsBatteryCharge">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Battery Charge Level&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>100</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="hsBatteryCharging">
+               <property name="text">
+                <string>Charging Battery</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </widget>
           </item>
           <item>
-           <layout class="QHBoxLayout">
-            <property name="spacing">
-             <number>6</number>
-            </property>
-            <property name="margin">
-             <number>0</number>
-            </property>
-            <item>
-             <widget class="QLineEdit" name="leOperatorName"/>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pbSelectOperator">
-              <property name="text">
-               <string>Select &amp;Operator</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QGridLayout">
-            <property name="margin">
-             <number>0</number>
-            </property>
-            <property name="spacing">
-             <number>6</number>
-            </property>
-            <item row="1" column="3">
-             <widget class="QPushButton" name="pbRegistration">
-              <property name="text">
-               <string>Set &amp;Registration</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QComboBox" name="cbRegistrationStatus">
-              <property name="currentIndex">
-               <number>1</number>
-              </property>
-              <item>
-               <property name="text">
-                <string>Not Reg (not searching)</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Reg (home network)</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Not Reg (searching)</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Reg denied</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Unknown</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Reg (roaming)</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLineEdit" name="leLAC">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="maxLength">
-               <number>4</number>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="QLineEdit" name="leCellID">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="maxLength">
-               <number>8</number>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QLabel" name="lblCellID">
-              <property name="text">
-               <string>Cell &amp;ID</string>
-              </property>
-              <property name="buddy">
-               <cstring>leCellID</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="lblStatus">
-              <property name="text">
-               <string>S&amp;tatus</string>
-              </property>
-              <property name="buddy">
-               <cstring>cbRegistrationStatus</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLabel" name="lbLAC">
-              <property name="text">
-               <string>&amp;LAC</string>
-              </property>
-              <property name="buddy">
-               <cstring>leLAC</cstring>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="QCheckBox" name="chkLocationInfo">
-            <property name="text">
-             <string>&amp;enable location info</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_2">
-      <attribute name="title">
-       <string>CBM</string>
-      </attribute>
-      <layout class="QVBoxLayout">
-       <property name="spacing">
-        <number>6</number>
-       </property>
-       <property name="margin">
-        <number>9</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="lblContent">
-         <property name="text">
-          <string>Cell Broadcast &amp;Message</string>
-         </property>
-         <property name="buddy">
-          <cstring>teContent</cstring>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTextEdit" name="teContent">
-         <property name="tabChangesFocus">
-          <bool>true</bool>
-         </property>
-         <property name="tabStopWidth">
-          <number>40</number>
-         </property>
-         <property name="acceptRichText">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout">
-         <property name="spacing">
-          <number>6</number>
-         </property>
-         <property name="margin">
-          <number>0</number>
-         </property>
-         <item>
-          <spacer>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>311</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pbSendCellBroadcast">
-           <property name="text">
-            <string>Send &amp;Broadcast</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="groupBox">
-         <property name="title">
-          <string>Message Parameters</string>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-         <property name="checked">
-          <bool>false</bool>
-         </property>
-         <layout class="QGridLayout">
-          <property name="margin">
-           <number>9</number>
-          </property>
-          <property name="spacing">
-           <number>6</number>
-          </property>
-          <item row="2" column="0">
-           <widget class="QLabel" name="lblMessageCode">
-            <property name="text">
-             <string>Message C&amp;ode:</string>
-            </property>
-            <property name="buddy">
-             <cstring>leMessageCode</cstring>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="lblUpdateNumber">
-            <property name="text">
-             <string>&amp;Update Number:</string>
-            </property>
-            <property name="buddy">
-             <cstring>leUpdateNumber</cstring>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QComboBox" name="cbGeographicalScope">
-            <property name="currentIndex">
-             <number>3</number>
-            </property>
-            <item>
-             <property name="text">
-              <string>Cell wide(immediate)</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>PLMN wide</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Location Area wide</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Cell wide(norm)</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QLineEdit" name="leUpdateNumber">
-            <property name="text">
-             <string>A</string>
-            </property>
-            <property name="maxLength">
-             <number>1</number>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="leChannel">
-            <property name="text">
-             <string>0032</string>
-            </property>
-            <property name="maxLength">
-             <number>4</number>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="lblChannel">
-            <property name="text">
-             <string>&amp;Channel</string>
-            </property>
-            <property name="buddy">
-             <cstring>leChannel</cstring>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="lblGeographicalScope">
-            <property name="text">
-             <string>&amp;Geographical Scope</string>
-            </property>
-            <property name="buddy">
-             <cstring>cbGeographicalScope</cstring>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QComboBox" name="cbLanguage">
-            <property name="currentIndex">
-             <number>1</number>
-            </property>
-            <item>
-             <property name="text">
-              <string>German</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>English</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Italian</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>French</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Spanish</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Dutch</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Swedish</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Danish</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Portuguese</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Finish</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Norwegian</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Greek</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Turkish</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="lblLanguage">
-            <property name="text">
-             <string>&amp;Language</string>
-            </property>
-            <property name="buddy">
-             <cstring>cbLanguage</cstring>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="leMessageCode">
-            <property name="text">
-             <string>012</string>
-            </property>
-            <property name="maxLength">
-             <number>3</number>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2" rowspan="5">
-           <spacer name="verticalSpacer_2">
+           <spacer name="horizontalSpacer">
             <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Ignored</enum>
+             <enum>Qt::Horizontal</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>290</width>
-              <height>150</height>
+              <width>40</width>
+              <height>20</height>
              </size>
             </property>
            </spacer>
           </item>
          </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_3">
-      <attribute name="title">
-       <string>SMS</string>
-      </attribute>
-      <layout class="QVBoxLayout">
-       <property name="spacing">
-        <number>6</number>
-       </property>
-       <property name="margin">
-        <number>9</number>
-       </property>
-       <item>
-        <widget class="QGroupBox" name="gbMessage1">
-         <property name="title">
-          <string>Message</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout">
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="atCheckBox">
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text">
+           <string>Show AT data</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gbNetworkRegistration">
+          <property name="title">
+           <string>Network Registration</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <property name="bottomMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="lblOperatorName">
+             <property name="text">
+              <string>Operator &amp;Name</string>
+             </property>
+             <property name="buddy">
+              <cstring>leOperatorName</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLineEdit" name="leOperatorName"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pbSelectOperator">
+               <property name="text">
+                <string>Select &amp;Operator</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <item row="1" column="3">
+              <widget class="QPushButton" name="pbRegistration">
+               <property name="text">
+                <string>Set &amp;Registration</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QComboBox" name="cbRegistrationStatus">
+               <property name="currentIndex">
+                <number>1</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Not Reg (not searching)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Reg (home network)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Not Reg (searching)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Reg denied</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Unknown</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Reg (roaming)</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="leLAC">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="maxLength">
+                <number>4</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="leCellID">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="maxLength">
+                <number>8</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="lblCellID">
+               <property name="text">
+                <string>Cell &amp;ID</string>
+               </property>
+               <property name="buddy">
+                <cstring>leCellID</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblStatus">
+               <property name="text">
+                <string>S&amp;tatus</string>
+               </property>
+               <property name="buddy">
+                <cstring>cbRegistrationStatus</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="lbLAC">
+               <property name="text">
+                <string>&amp;LAC</string>
+               </property>
+               <property name="buddy">
+                <cstring>leLAC</cstring>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="chkLocationInfo">
+             <property name="text">
+              <string>&amp;Enable location info</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>CBM</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lblContent">
+          <property name="text">
+           <string>Cell Broadcast &amp;Message</string>
+          </property>
+          <property name="buddy">
+           <cstring>teContent</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="teContent">
+          <property name="tabChangesFocus">
+           <bool>true</bool>
+          </property>
+          <property name="tabStopWidth">
+           <number>40</number>
+          </property>
+          <property name="acceptRichText">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
-           <layout class="QGridLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="lblSMSSender">
-              <property name="text">
-               <string>&amp;Sender</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-              </property>
-              <property name="buddy">
-               <cstring>leMessageSender</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="leMessageSender">
-              <property name="inputMask">
-               <string/>
-              </property>
-              <property name="maxLength">
-               <number>32767</number>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="lblSMSServiceCenter">
-              <property name="text">
-               <string>Service &amp;Center</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-              </property>
-              <property name="buddy">
-               <cstring>leSMSServiceCenter</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLineEdit" name="leSMSServiceCenter">
-              <property name="inputMask">
-               <string/>
-              </property>
-              <property name="text">
-               <string>123</string>
-              </property>
-              <property name="maxLength">
-               <number>32767</number>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="lblSMSClass">
-              <property name="text">
-               <string>Class</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QLineEdit" name="leSMSClass">
-              <property name="text">
-               <string>1</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="2">
-             <widget class="QPushButton" name="pbSendSMSMessage">
-              <property name="text">
-               <string>Send &amp;Message</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
+           <spacer>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>311</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item>
-           <widget class="QLabel" name="leSMSText">
+           <widget class="QPushButton" name="pbSendCellBroadcast">
             <property name="text">
-             <string>&amp;Text</string>
-            </property>
-            <property name="buddy">
-             <cstring>teSMSText</cstring>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QTextEdit" name="teSMSText">
-            <property name="tabChangesFocus">
-             <bool>true</bool>
+             <string>Send &amp;Broadcast</string>
             </property>
            </widget>
           </item>
          </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="gbDatagram">
-         <property name="title">
-          <string>Datagram</string>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <layout class="QGridLayout" name="datagramLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="lbDstPort">
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Message Parameters</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <property name="bottomMargin">
+            <number>9</number>
+           </property>
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lblMessageCode">
+             <property name="text">
+              <string>Message C&amp;ode:</string>
+             </property>
+             <property name="buddy">
+              <cstring>leMessageCode</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="lblUpdateNumber">
+             <property name="text">
+              <string>&amp;Update Number:</string>
+             </property>
+             <property name="buddy">
+              <cstring>leUpdateNumber</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="cbGeographicalScope">
+             <property name="currentIndex">
+              <number>3</number>
+             </property>
+             <item>
               <property name="text">
-               <string>Destination Port</string>
+               <string>Cell wide(immediate)</string>
               </property>
-              <property name="buddy">
-               <cstring>leDstPort</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="leDstPort">
-              <property name="sizeIncrement">
-               <size>
-                <width>1</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="inputMask">
-               <string/>
-              </property>
-              <property name="cursorPosition">
-               <number>0</number>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="lbSrcPort">
+             </item>
+             <item>
               <property name="text">
-               <string>Source Port</string>
+               <string>PLMN wide</string>
               </property>
-              <property name="buddy">
-               <cstring>leSrcPort</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLineEdit" name="leSrcPort">
-              <property name="sizeIncrement">
-               <size>
-                <width>1</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="inputMask">
-               <string/>
-              </property>
-              <property name="cursorPosition">
-               <number>0</number>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="lbSender">
+             </item>
+             <item>
               <property name="text">
-               <string>S&amp;ender</string>
+               <string>Location Area wide</string>
               </property>
-              <property name="buddy">
-               <cstring>leDatagramSender</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QLineEdit" name="leDatagramSender">
-              <property name="sizeIncrement">
-               <size>
-                <width>1</width>
-                <height>0</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="lbFile">
+             </item>
+             <item>
               <property name="text">
-               <string>&amp;File</string>
+               <string>Cell wide(norm)</string>
               </property>
-              <property name="buddy">
-               <cstring>leFile</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QLineEdit" name="leFile">
-              <property name="sizeIncrement">
-               <size>
-                <width>1</width>
-                <height>0</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QCheckBox" name="chkAppData">
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="leUpdateNumber">
+             <property name="text">
+              <string>A</string>
+             </property>
+             <property name="maxLength">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="leChannel">
+             <property name="text">
+              <string>0032</string>
+             </property>
+             <property name="maxLength">
+              <number>4</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="lblChannel">
+             <property name="text">
+              <string>&amp;Channel</string>
+             </property>
+             <property name="buddy">
+              <cstring>leChannel</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="lblGeographicalScope">
+             <property name="text">
+              <string>&amp;Geographical Scope</string>
+             </property>
+             <property name="buddy">
+              <cstring>cbGeographicalScope</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="cbLanguage">
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <item>
               <property name="text">
-               <string>Fi&amp;le/Text</string>
+               <string>German</string>
               </property>
-              <property name="checked">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="1">
-             <widget class="QPushButton" name="pbSendSMSDatagram">
+             </item>
+             <item>
               <property name="text">
-               <string>Send &amp;Datagram</string>
+               <string>English</string>
               </property>
-             </widget>
-            </item>
-            <item row="4" column="2">
-             <widget class="QPushButton" name="pbFile">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
+             </item>
+             <item>
               <property name="text">
-               <string>...</string>
+               <string>Italian</string>
               </property>
-             </widget>
-            </item>
-            <item row="5" column="0">
-             <widget class="QCheckBox" name="chkContentType">
+             </item>
+             <item>
               <property name="text">
-               <string>Content T&amp;ype</string>
+               <string>French</string>
               </property>
-              <property name="checked">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="1">
-             <widget class="QLineEdit" name="leContentType">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>1</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="readOnly">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout">
-            <property name="spacing">
-             <number>6</number>
-            </property>
-            <property name="margin">
-             <number>0</number>
-            </property>
-            <item>
-             <widget class="QLabel" name="lblAppData_2">
+             </item>
+             <item>
               <property name="text">
-               <string>D&amp;ata</string>
+               <string>Spanish</string>
               </property>
-              <property name="buddy">
-               <cstring>teAppData</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QTextEdit" name="teAppData">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="tabChangesFocus">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_4">
-      <attribute name="title">
-       <string>VoiceMail</string>
-      </attribute>
-      <layout class="QVBoxLayout">
-       <property name="spacing">
-        <number>6</number>
-       </property>
-       <property name="margin">
-        <number>9</number>
-       </property>
-       <item>
-        <widget class="QGroupBox" name="gbMailbox">
-         <property name="title">
-          <string>Mailbox</string>
-         </property>
-         <layout class="QVBoxLayout">
-          <item>
-           <layout class="QGridLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="lblDiallingNumber">
+             </item>
+             <item>
               <property name="text">
-               <string>&amp;Dialling Number</string>
+               <string>Dutch</string>
               </property>
-              <property name="alignment">
-               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-              </property>
-              <property name="buddy">
-               <cstring>leServiceDiallingNumber</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="leServiceDiallingNumber">
-              <property name="inputMask">
-               <string/>
-              </property>
+             </item>
+             <item>
               <property name="text">
-               <string>6789</string>
+               <string>Swedish</string>
               </property>
-              <property name="maxLength">
-               <number>12</number>
+             </item>
+             <item>
+              <property name="text">
+               <string>Danish</string>
               </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="QLabel" name="leMessagesWaiting">
+             </item>
+             <item>
+              <property name="text">
+               <string>Portuguese</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Finish</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Norwegian</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Greek</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Turkish</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="lblLanguage">
+             <property name="text">
+              <string>&amp;Language</string>
+             </property>
+             <property name="buddy">
+              <cstring>cbLanguage</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="leMessageCode">
+             <property name="text">
+              <string>012</string>
+             </property>
+             <property name="maxLength">
+              <number>3</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2" rowspan="5">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Ignored</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>290</width>
+               <height>150</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>SMS</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="gbMessage1">
+          <property name="title">
+           <string>Message</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QGridLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblSMSSender">
+               <property name="text">
+                <string>&amp;Sender</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+               <property name="buddy">
+                <cstring>leMessageSender</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="leMessageSender">
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="maxLength">
+                <number>32767</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lblSMSServiceCenter">
+               <property name="text">
+                <string>Service &amp;Center</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+               <property name="buddy">
+                <cstring>leSMSServiceCenter</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="leSMSServiceCenter">
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="text">
+                <string>123</string>
+               </property>
+               <property name="maxLength">
+                <number>32767</number>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lblSMSClass">
+               <property name="text">
+                <string>Class</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="leSMSClass">
+               <property name="text">
+                <string>1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="pbSendSMSMessage">
+               <property name="text">
+                <string>Send &amp;Message</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="leSMSText">
+             <property name="text">
+              <string>&amp;Text</string>
+             </property>
+             <property name="buddy">
+              <cstring>teSMSText</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="teSMSText">
+             <property name="tabChangesFocus">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gbDatagram">
+          <property name="title">
+           <string>Datagram</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QGridLayout" name="datagramLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lbDstPort">
+               <property name="text">
+                <string>Destination Port</string>
+               </property>
+               <property name="buddy">
+                <cstring>leDstPort</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="leDstPort">
+               <property name="sizeIncrement">
+                <size>
+                 <width>1</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="cursorPosition">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lbSrcPort">
+               <property name="text">
+                <string>Source Port</string>
+               </property>
+               <property name="buddy">
+                <cstring>leSrcPort</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="leSrcPort">
+               <property name="sizeIncrement">
+                <size>
+                 <width>1</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="cursorPosition">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lbSender">
+               <property name="text">
+                <string>S&amp;ender</string>
+               </property>
+               <property name="buddy">
+                <cstring>leDatagramSender</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="leDatagramSender">
+               <property name="sizeIncrement">
+                <size>
+                 <width>1</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="lbFile">
+               <property name="text">
+                <string>&amp;File</string>
+               </property>
+               <property name="buddy">
+                <cstring>leFile</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="leFile">
+               <property name="sizeIncrement">
+                <size>
+                 <width>1</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="chkAppData">
+               <property name="text">
+                <string>Fi&amp;le/Text</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QPushButton" name="pbSendSMSDatagram">
+               <property name="text">
+                <string>Send &amp;Datagram</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QPushButton" name="pbFile">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QCheckBox" name="chkContentType">
+               <property name="text">
+                <string>Content T&amp;ype</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="leContentType">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>1</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="lblAppData_2">
+               <property name="text">
+                <string>D&amp;ata</string>
+               </property>
+               <property name="buddy">
+                <cstring>teAppData</cstring>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="teAppData">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="tabChangesFocus">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>VoiceMail</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="gbMailbox">
+          <property name="title">
+           <string>Mailbox</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <layout class="QGridLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblDiallingNumber">
+               <property name="text">
+                <string>&amp;Dialling Number</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+               <property name="buddy">
+                <cstring>leServiceDiallingNumber</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="leServiceDiallingNumber">
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="text">
+                <string>6789</string>
+               </property>
+               <property name="maxLength">
+                <number>12</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="leMessagesWaiting">
+             <property name="text">
+              <string>&amp;Messages waiting</string>
+             </property>
+             <property name="buddy">
+              <cstring>twMessageList</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="twMessageList">
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::ExtendedSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <property name="showGrid">
+              <bool>false</bool>
+             </property>
+             <property name="columnCount">
+              <number>3</number>
+             </property>
+             <column/>
+             <column/>
+             <column/>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout">
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pbNotifyUDH">
+               <property name="text">
+                <string>Send &amp;VoiceMail notification in SMS UDH</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pbNotifyUDHEnhanced">
+               <property name="text">
+                <string>Send &amp;Enhanced VoiceMail notification</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gbMessage2">
+          <property name="title">
+           <string>Message</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <layout class="QGridLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblSenderNumber">
+               <property name="text">
+                <string>&amp;Sender Number</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+               <property name="buddy">
+                <cstring>leSenderNumber</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="leSenderNumber">
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="maxLength">
+                <number>12</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pbAddMessage">
+               <property name="text">
+                <string>&amp;Add message</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lblPriority">
+               <property name="text">
+                <string>&amp;Urgent</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+               <property name="buddy">
+                <cstring>chkPriority</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="chkPriority">
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="pbRemoveMessage">
+               <property name="text">
+                <string>&amp;Remove selected</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>USSD</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <layout class="QGridLayout">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="chkAskResponse">
             <property name="text">
-             <string>&amp;Messages waiting</string>
-            </property>
-            <property name="buddy">
-             <cstring>twMessageList</cstring>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QTableWidget" name="twMessageList">
-            <property name="editTriggers">
-             <set>QAbstractItemView::NoEditTriggers</set>
-            </property>
-            <property name="selectionMode">
-             <enum>QAbstractItemView::ExtendedSelection</enum>
-            </property>
-            <property name="selectionBehavior">
-             <enum>QAbstractItemView::SelectRows</enum>
-            </property>
-            <property name="showGrid">
-             <bool>false</bool>
-            </property>
-            <property name="columnCount">
-             <number>3</number>
-            </property>
-            <column/>
-            <column/>
-            <column/>
-           </widget>
-          </item>
-          <item>
-           <layout class="QGridLayout">
-            <item row="0" column="0">
-             <widget class="QPushButton" name="pbNotifyUDH">
-              <property name="text">
-               <string>Send &amp;VoiceMail notification in SMS UDH</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QPushButton" name="pbNotifyUDHEnhanced">
-              <property name="text">
-               <string>Send &amp;Enhanced VoiceMail notification</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="gbMessage2">
-         <property name="title">
-          <string>Message</string>
-         </property>
-         <layout class="QVBoxLayout">
-          <item>
-           <layout class="QGridLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="lblSenderNumber">
-              <property name="text">
-               <string>&amp;Sender Number</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-              </property>
-              <property name="buddy">
-               <cstring>leSenderNumber</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="leSenderNumber">
-              <property name="inputMask">
-               <string/>
-              </property>
-              <property name="maxLength">
-               <number>12</number>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QPushButton" name="pbAddMessage">
-              <property name="text">
-               <string>&amp;Add message</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="lblPriority">
-              <property name="text">
-               <string>&amp;Urgent</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-              </property>
-              <property name="buddy">
-               <cstring>chkPriority</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QCheckBox" name="chkPriority">
-              <property name="checked">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="QPushButton" name="pbRemoveMessage">
-              <property name="text">
-               <string>&amp;Remove selected</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_5">
-      <attribute name="title">
-       <string>USSD</string>
-      </attribute>
-      <layout class="QVBoxLayout">
-       <property name="spacing">
-        <number>6</number>
-       </property>
-       <property name="margin">
-        <number>9</number>
-       </property>
-       <item>
-        <layout class="QGridLayout">
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="chkAskResponse">
-           <property name="text">
-            <string>Request response</string>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="leUSSDString">
-           <property name="inputMask">
-            <string/>
-           </property>
-           <property name="maxLength">
-            <number>120</number>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QPushButton" name="pbSendUSSD">
-           <property name="text">
-            <string>Send</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLabel" name="lblResponse">
-           <property name="toolTip">
-            <string>User response</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QPushButton" name="pbCancelUSSD">
-           <property name="text">
-            <string>Cancel session</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_6">
-      <attribute name="title">
-       <string>SIM</string>
-      </attribute>
-      <layout class="QVBoxLayout">
-       <property name="spacing">
-        <number>6</number>
-       </property>
-       <property name="margin">
-        <number>9</number>
-       </property>
-       <item>
-        <widget class="QGroupBox" name="gbCard">
-         <property name="title">
-          <string>Card</string>
-         </property>
-         <layout class="QVBoxLayout">
-          <item>
-           <widget class="QCheckBox" name="cbSimInserted">
-            <property name="text">
-             <string>Card inserted</string>
+             <string>Request response</string>
             </property>
             <property name="checked">
              <bool>true</bool>
             </property>
            </widget>
           </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QGroupBox" name="gbSATK">
-         <property name="title">
-          <string>Application</string>
-         </property>
-         <layout class="QHBoxLayout">
-          <item>
-           <widget class="QComboBox" name="cbSimApps"/>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pbStart">
-            <property name="text">
-             <string>Start</string>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="leUSSDString">
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="maxLength">
+             <number>120</number>
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QPushButton" name="pbAbort">
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pbSendUSSD">
             <property name="text">
-             <string>Abort</string>
+             <string>Send</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="lblResponse">
+            <property name="toolTip">
+             <string>User response</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pbCancelUSSD">
+            <property name="text">
+             <string>Cancel session</string>
             </property>
            </widget>
           </item>
          </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="tab_7">
-      <attribute name="title">
-       <string>Modem</string>
-      </attribute>
-      <widget class="QWidget" name="gridLayoutWidget">
-       <property name="geometry">
-        <rect>
-         <x>9</x>
-         <y>9</y>
-         <width>591</width>
-         <height>511</height>
-        </rect>
-       </property>
-       <layout class="QGridLayout">
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>SIM</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="topMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <property name="bottomMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="gbCard">
+          <property name="title">
+           <string>Card</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <widget class="QCheckBox" name="cbSimInserted">
+             <property name="text">
+              <string>Card inserted</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gbSATK">
+          <property name="title">
+           <string>Application</string>
+          </property>
+          <layout class="QHBoxLayout">
+           <item>
+            <widget class="QComboBox" name="cbSimApps"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbStart">
+             <property name="text">
+              <string>Start</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pbAbort">
+             <property name="text">
+              <string>Abort</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Modem</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pbReset">
+          <property name="text">
+           <string>Reset</string>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="1">
          <spacer>
           <property name="orientation">
@@ -1218,294 +1339,294 @@
           </property>
          </spacer>
         </item>
-        <item row="0" column="0">
-         <widget class="QPushButton" name="pbReset">
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>547</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Positioning</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="lbGNSSdata">
           <property name="text">
-           <string>Reset</string>
+           <string>Positioning Reporting XML Data (+CPOSR)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QTextEdit" name="teGNSStext">
+          <property name="lineWrapMode">
+           <enum>QTextEdit::NoWrap</enum>
+          </property>
+          <property name="acceptRichText">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pbSendGNSSData">
+          <property name="text">
+           <string>SendData</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pbGNSSDefault">
+          <property name="text">
+           <string>Default</string>
           </property>
          </widget>
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Call</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTableWidget" name="twCallMgt">
+          <property name="columnCount">
+           <number>5</number>
+          </property>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>50</number>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>50</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>id</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>number</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>state</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>type</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pbAlerting">
+            <property name="text">
+             <string>Alerting</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pbActive">
+            <property name="text">
+             <string>Active</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pbHangup">
+            <property name="text">
+             <string>Hangup</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QGroupBox" name="gbIncomingCall">
+            <property name="title">
+             <string>Incoming Call</string>
+            </property>
+            <layout class="QGridLayout">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="cbCaller">
+               <property name="text">
+                <string>Caller Identity</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="leCaller"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="cbCallerName">
+               <property name="text">
+                <string>Caller Name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="leCallerName">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="cbCalledLine">
+               <property name="text">
+                <string>Called Line</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="leCalledLine">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="2">
+              <layout class="QHBoxLayout">
+               <property name="spacing">
+                <number>6</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <spacer>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>111</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pbIncomingCall">
+                 <property name="text">
+                  <string>&amp;Call</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="gbCallSettings">
+            <property name="title">
+             <string>Call Settings</string>
+            </property>
+            <layout class="QGridLayout">
+             <item row="0" column="1">
+              <widget class="QComboBox" name="cbCSSU"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="cbCSSI"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="lbCSSU">
+               <property name="text">
+                <string>CSSU</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lbCSSI">
+               <property name="text">
+                <string>CSSI</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pbSendNotif">
+               <property name="text">
+                <string>Send Notification</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
      </widget>
-     <widget class="QWidget" name="tab_8">
-      <attribute name="title">
-       <string>Positioning</string>
-      </attribute>
-      <widget class="QLabel" name="lbGNSSdata">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>271</width>
-         <height>31</height>
-        </rect>
+     <widget class="QGroupBox" name="atGroupBox">
+      <property name="title">
+       <string>Phonesim AT</string>
+      </property>
+      <layout class="QVBoxLayout">
+       <property name="spacing">
+        <number>6</number>
        </property>
-       <property name="text">
-        <string>Positioning Reporting XML Data (+CPOSR)</string>
+       <property name="leftMargin">
+        <number>9</number>
        </property>
-      </widget>
-      <widget class="QTextEdit" name="teGNSStext">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>601</width>
-         <height>311</height>
-        </rect>
+       <property name="topMargin">
+        <number>9</number>
        </property>
-       <property name="lineWrapMode">
-        <enum>QTextEdit::NoWrap</enum>
+       <property name="rightMargin">
+        <number>9</number>
        </property>
-       <property name="acceptRichText">
-        <bool>false</bool>
+       <property name="bottomMargin">
+        <number>9</number>
        </property>
-      </widget>
-      <widget class="QPushButton" name="pbSendGNSSData">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>360</y>
-         <width>80</width>
-         <height>26</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>SendData</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pbGNSSDefault">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>360</y>
-         <width>80</width>
-         <height>26</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Default</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="tab_9">
-      <attribute name="title">
-       <string>Call</string>
-      </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QTableWidget" name="twCallMgt">
-         <property name="columnCount">
-          <number>5</number>
+        <widget class="QTextBrowser" name="atViewer"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="openSpecButton">
+         <property name="text">
+          <string>Open Specification File...</string>
          </property>
-         <attribute name="horizontalHeaderMinimumSectionSize">
-          <number>50</number>
-         </attribute>
-         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
-          <bool>true</bool>
-         </attribute>
-         <attribute name="verticalHeaderDefaultSectionSize">
-          <number>50</number>
-         </attribute>
-         <column>
-          <property name="text">
-           <string>id</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>number</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>state</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>name</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>type</string>
-          </property>
-         </column>
         </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QPushButton" name="pbAlerting">
-           <property name="text">
-            <string>Alerting</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pbActive">
-           <property name="text">
-            <string>Active</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pbHangup">
-           <property name="text">
-            <string>Hangup</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QGroupBox" name="gbIncomingCall">
-           <property name="title">
-            <string>Incoming Call</string>
-           </property>
-           <layout class="QGridLayout">
-            <item row="0" column="0">
-             <widget class="QCheckBox" name="cbCaller">
-              <property name="text">
-               <string>Caller Identity</string>
-              </property>
-              <property name="checked">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLineEdit" name="leCaller"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="cbCallerName">
-              <property name="text">
-               <string>Caller Name</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLineEdit" name="leCallerName">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QCheckBox" name="cbCalledLine">
-              <property name="text">
-               <string>Called Line</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QLineEdit" name="leCalledLine">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0" colspan="2">
-             <layout class="QHBoxLayout">
-              <property name="spacing">
-               <number>6</number>
-              </property>
-              <property name="margin">
-               <number>0</number>
-              </property>
-              <item>
-               <spacer>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>111</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pbIncomingCall">
-                <property name="text">
-                 <string>&amp;Call</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QGroupBox" name="gbCallSettings">
-           <property name="title">
-            <string>Call Settings</string>
-           </property>
-           <layout class="QGridLayout">
-            <item row="0" column="1">
-             <widget class="QComboBox" name="cbCSSU"/>
-            </item>
-            <item row="1" column="1">
-             <widget class="QComboBox" name="cbCSSI"/>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="lbCSSU">
-              <property name="text">
-               <string>CSSU</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="lbCSSI">
-              <property name="text">
-               <string>CSSI</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QPushButton" name="pbSendNotif">
-              <property name="text">
-               <string>Send Notification</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-        </layout>
        </item>
       </layout>
      </widget>
-    </widget>
-   </item>
-   <item>
-    <widget class="QGroupBox" name="atGroupBox">
-     <property name="title">
-      <string>Phonesim AT</string>
-     </property>
-     <layout class="QVBoxLayout">
-      <property name="spacing">
-       <number>6</number>
-      </property>
-      <property name="margin">
-       <number>9</number>
-      </property>
-      <item>
-       <widget class="QTextBrowser" name="atViewer"/>
-      </item>
-      <item>
-       <widget class="QPushButton" name="openSpecButton">
-        <property name="text">
-         <string>Open Specification File...</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </widget>
    </item>
   </layout>
